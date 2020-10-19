@@ -1,4 +1,4 @@
-# prints info on env
+#!/bin/bash fish
 
 function replace_homepath_with_tilde
     set -l path (echo ~)
@@ -47,4 +47,8 @@ end
 
 function apps
     ls -la /Applications/
+end
+
+function dateiso
+    date -u +"%Y-%m-%dT%H:%M:%SZ"
 end
